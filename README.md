@@ -1,2 +1,2 @@
-# https://htthova.github.io/
+# htthova.github.io
 test
