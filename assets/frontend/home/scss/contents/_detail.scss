@@ -1,0 +1,81 @@
+.new-detail {
+	.title-new-detail, .content-detail {
+		margin-left: 10px;
+		margin-right: 10px;
+		@include devices(375) {
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+		@include devices(1200) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	.title-new-detail {
+		padding-bottom: 10px;
+		border-bottom: 1px solid #cccccc;
+		@include devices(1200) {
+			margin-top: 40px;
+		}
+
+		.title-detail {
+			margin-top: 15px;
+			font-family: 'tahomabold';
+			font-size: 20px;
+			color: #434242;
+			text-align: justify;
+			@include devices(375) {
+				font-size: 24px;
+			}
+			@include devices(600) {
+				font-size: 30px;
+			}
+			@include devices(1200) {
+				float: left;
+				margin-left: 110px;
+				width: calc(100% - 190px);
+				text-align: center;
+			}
+		}
+		.date-detail {
+			text-align: right;
+			font-size: 18px;
+			color: #434242;
+			@include devices(1200) {
+				float: right;
+			}
+		}
+	}
+	.content-detail {
+		margin-top: 25px;
+	}
+}
+
+.back-title {
+	@include devices(1200) {
+		width: 60px;
+		float: left;
+		position: absolute;
+		margin-top: 22px;
+    // margin-left: 30px;
+    // left: 0;
+  }
+  a {
+  	@include devices(1200) {
+  		// font-family: 'tahoma';
+  		color: #070e1e;
+  		font-size: 17px;
+  	}
+  	i {
+  		@include devices(1200) {
+  			width: 20px;
+  			height: 34px;
+  			left: -30px;
+  			top: -2px;
+  			position: absolute;
+  			content: '';
+  			background: url(../images/icon-back.png) no-repeat right top;
+  		}
+  	}
+  }
+}

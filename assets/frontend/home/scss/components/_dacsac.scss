@@ -1,0 +1,100 @@
+.dac-sac {
+  // overflow-x: hidden;
+  // margin-top: 25px;
+  // padding-bottom: 10px;
+  background: url(../images/bg-content.jpg) no-repeat center top;
+  padding-top: 30px;
+  &:before {
+    // @include devices(1200) {
+    //   z-index: 2;
+    //   position: absolute;
+    //   content: '';
+    //   width: 729px;
+    //   height: 955px;
+    //   background: url(../images/art-ds.png) no-repeat center center;
+    //   left: -180px;
+    //   top: 500px;
+    // }
+  }
+  @include devices(1200) {
+    // margin-top: 100px;
+    // background: transparent;
+  }
+  
+
+  .slide-dacsac {
+    // margin-top: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    @include devices(1200) {
+      margin-bottom: 0;
+    }
+    &:before, &:after {
+      @include devices(1200) {
+        position: absolute;
+        content: '';
+      }
+    }
+    &:before {
+      // @include devices(1200) {
+      //   width: 1259px;
+      //   height: 569px;
+      //   background: url(../images/border-ds.png) no-repeat center center;
+      //   left: -134px;
+      //   top: -35px;
+      // }
+    }
+    
+
+    @include devices(768) {
+      // margin-bottom: 250px;
+    }
+    @include devices(768) {
+      // margin-top: 50px;
+    }
+    @include devices(1200) {
+      // margin-top: 80px;
+    }
+    
+    .slick-list {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .slick-dots {
+      bottom: 0px;
+      @include devices(1024) {
+        bottom: 70px;
+      }
+      li {
+        width: 15px;
+        height: 15px;
+        // background: #8b221c;
+        // transform: rotate(45deg);
+        margin: 0 8px;
+        &.slick-active {
+          // background: #f3af62;
+          // border: 2px solid #8b221c;
+          // &:before {
+          //   position: absolute;
+          //   content: '';
+          //   left: 0;
+          //   top: 0;
+          //   right: 0;
+          //   bottom: 0;
+          //   border: 2px solid #8b221c;
+          // }
+        }
+      }
+    }
+  }
+  .item-ds {
+    img {
+      width: 100%;
+
+    }
+  }
+  
+}

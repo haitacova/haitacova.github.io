@@ -1,0 +1,79 @@
+.nav-right {
+  width: 217px;
+  height: 501px;
+  position: fixed;
+  z-index:9;
+  top: 30%;
+	// transform: translateY(-50%);
+	background: $bg-nav-right center top;
+	right: -217px;
+	transition: all 0.5s ease;
+  &:before, &:after {
+    position: absolute;
+    content: '';
+  }
+  &:after {
+    width: 73px;
+    height: 92px;
+    background: url(../images/rau-anchor.png);
+    left: 51%;
+    bottom: -92px;
+    transform: translateX(-50%);
+  }
+	&.open {
+		right: 2px;
+	}
+  .btn-nap-the {
+    width: 194px;
+    height: 100px;
+    line-height: 100px;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../images/bg-game-nav-right.jpg) no-repeat left top;
+    background-size: 100% 100%;
+    a {
+      padding-top: 0;
+    }
+  }
+
+}
+
+.qr-code {
+ width: 176px;
+ margin-top: 35px;
+ display: block;
+ border: 6px solid white;
+ border-radius: 30px;
+ margin-bottom: 10px;
+}
+
+
+.i-control {
+	cursor: pointer;
+	position: absolute;
+  top: 40px;
+  left: -29px;
+  height: 85px;
+  width: 30px;
+  background: #2e1712;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+
+  .i-txt {
+    height: 55px;
+    width: 25px;
+    margin-top: 14px;
+    margin-left: 2px;
+    background: url(../images/icon-close-nav-right.png) no-repeat;
+    background-size: contain;
+    display: block;
+    transform: rotateZ(0deg);
+  }
+  
+  &.i-control-open {
+  	.i-txt {
+     transform: rotateZ(180deg);
+   }
+ }
+}
+

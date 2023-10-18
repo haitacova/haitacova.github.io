@@ -1,0 +1,156 @@
+.text {
+	font-size: 14px;
+	color: #0f191f;
+    @include devices(1000) {
+        font-size: 15px;
+    }
+    
+    
+    span.content-event-first {
+	    float: left;
+        font-size: 40px;
+	    line-height: 5px;
+	    margin: 4px 2px 0px 0px;
+    }
+    h1, .content-event-h1 {
+	    font-size: 19px;
+	    color: #0f191f;
+	    padding: 4px 0 8px 40px;
+	    position: relative;
+	    font-family: 'tahomabold';
+		&:before {
+			content: '';
+			width: 30px;
+			height: 26px;
+			background: url(../images/icon-h1-n.png) no-repeat center center;
+			background-size: 100%;
+			position: absolute;
+			left: 0;
+			top: 4px;
+		}
+    }
+    h2, .content-event-h2 {
+  	    margin-left: 15px;
+	    font-size: 16px;
+	    font-weight: bold;
+	    padding-left: 25px;
+	    color: #0f191f;
+	    font-family: "tahomabold";
+	    margin-bottom: 10px;
+	    margin-top: 10px;
+	    position: relative;
+		&:before {
+			content: '';
+			width: 20px;
+			height: 20px;
+			background: url(../images/icon-h2-n.png) no-repeat 1px 1px transparent;
+			background-size: 100%;
+			position: absolute;
+			left: 0;
+			top: 2px;
+		}
+    }
+    a {
+    	color: #1A30FB;
+    }
+    ul {
+	    margin-left: 25px;
+	    li {
+	    	line-height: 28px;
+	    }
+    }
+	p {
+		font-family: 'tahoma';
+	    line-height: 28px;
+	    color: #0f191f;
+	    img {
+    	    margin-top: 15px;
+    	    margin-bottom: 15px;
+    	    max-width: 100%;
+		    height: auto;
+	    }
+	}
+	table {
+		width: 100%;
+	    border-collapse: collapse;
+	    border-spacing: 0;
+        margin-top: 15px;
+	    margin-bottom: 15px;
+	    margin-left: auto; margin-right: auto;
+	    @include devices(1024) {
+	        width: auto;
+        }
+	    tr {
+	    	td {
+	    		border: 1px solid #4e5051;
+	    		margin: 0;
+			    padding: 10px 10px;
+			    vertical-align: middle!important;
+			    text-align: center;
+	    	}
+	    	&:first-child {
+	    		background: #000;
+	    		td {
+	    			font-family: 'tahomabold';
+    				// color: $color_text_button_downgame;
+	    			p {
+	    				font-family: 'tahomabold';
+	    				color: $color_white;
+	    			}
+	    		}
+	    	}
+	    }
+	}
+	fieldset {
+		border: 1px solid #4e5051;
+	    margin: 20px 0;
+	    padding: 10px;
+	    color: #2a2a2a;
+	    background: #f3f3f3;
+	    legend {
+	    	color: white;
+    	    background: #8c1c08;
+		    font-family: 'tahomabold';
+		    padding: 0 15px;
+	    }
+	    ul {
+	    	margin-left: 15px;
+	    }
+	}
+	strong {
+		font-family: 'tahomabold';
+	}
+	em {
+		font-style: italic;
+	}
+}
+
+table {
+	img {
+		display: block;
+	}
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 14px;
+    font-family: 'tahoma';
+    margin-top: 10px;
+    tr {
+    	&:first-child td {
+		    background-color: #091d42;
+		    color: $color_black;
+		    font-weight: bold;
+		    text-align: center;
+		    padding: 10px;
+    	}
+    	td {
+    		border: 1px solid $color_white;
+		    vertical-align: middle;
+		    color: $color_black;
+		    font-weight: normal;
+		    text-align: center;
+		    padding: 5px 0px;
+    	}
+    }
+}

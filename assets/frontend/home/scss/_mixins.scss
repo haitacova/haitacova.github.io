@@ -1,0 +1,115 @@
+
+// MIN DEVICES
+$breakpoints: (
+  280: 280px,
+  321: 320px,
+  360: 360px,
+  375: 375px,
+  414: 414px,
+  480: 480px,
+  544: 544px,
+  568: 568px,
+  576: 576px,
+  600: 600px,
+  640: 640px,
+  768: 768px,
+  800: 800px,
+  900: 900px,
+  940: 940px,
+  992: 992px,
+  1000: 1000px,
+  1024: 1024px,
+  1030: 1030px,
+  1180: 1180px,
+  1200: 1200px,
+  1280: 1280px,
+  1360: 1360px,
+  1366: 1366px,
+  1440: 1440px,
+  1600: 1600px,
+  1920: 1920px,
+);
+
+@mixin devices($breakpoint) { 
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media only screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+}
+
+
+// MAX DEVICES WIDTH
+$max_breakpoints: (
+  1600: 1600px,
+  1440: 1440px,
+  1366: 1366px,
+  1199: 1199px,
+  1030: 1030px,
+  1024: 1024px,
+  1023: 1023px,
+  999: 999px,
+  991: 991px,
+  768: 768px,
+  767: 767px,
+  750: 750px,
+  680: 680px,
+  667: 667px,
+  640: 640px,
+  568: 568px,
+  480: 480px,
+  414: 414px,
+  899: 899px,
+  639: 639px,
+  360: 360px,
+  320: 320px,
+);
+
+@mixin max_devices($max_breakpoint) { 
+  @if map-has-key($max_breakpoints, $max_breakpoint) {
+    @media only screen and (max-width: #{map-get($max_breakpoints, $max_breakpoint)}) {
+      @content;
+    }
+  }
+}
+
+@mixin box_shadow {
+  -moz-box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.6);
+}
+
+@mixin transition_all ($time) {
+    transition: all $time ease;
+    -moz-transition: all $time ease;
+    -webkit-transition: all $time ease;
+}
+
+@mixin transition ($time) {
+    -webkit-transition: $time ease-in-out;
+    -moz-transition: $time ease-in-out;
+    -o-transition: $time ease-in-out;
+    transition: $time ease-in-out;
+}
+
+@mixin rotate ($deg) {
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+
+@mixin transform ($x, $y) {
+    -ms-transform: translate($x,  $y); /* IE 9 */
+    -webkit-transform: translate($x,  $y); /* Safari */
+    transform: translate($x,  $y);
+}
+
+@mixin bg_gradient_top_bottm ($a, $b) {
+    background-color: $a;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($b), to($a));
+    background: -webkit-linear-gradient(top, $a, $b);
+    background: -moz-linear-gradient(top, $a, $b);
+    background: -ms-linear-gradient(top, $a, $b);
+}
