@@ -1,0 +1,16 @@
+{
+    "developer": "MUASOURCE.VN",
+    "short_name": "HaiTacOva",
+    "name": "HaiTacOva - Kho Bau Huyen Thoai",
+    "icons": [
+      {
+        "src": "logo.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }
