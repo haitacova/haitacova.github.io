@@ -245,7 +245,7 @@ if (isset($_POST['napthe'])) {
                               </a>
                            </div>
                            <div class="col">
-                              <a class="w-100 fw-semibold" href="/napthecao.html">
+                              <a class="w-100 fw-semibold" href="/napthecao.php">
                                  <div class="recharge-method-item active"><img alt="method" src="/assets/card.png"
                                        data-pin-no-hover="true"></div>
                               </a>
