@@ -2,11 +2,11 @@
   <img src="assets/logo.png" alt="Hải Tặc Ova"width="320">
   <h1>Chào mừng bạn đến với GitHub của tôi</h1>
   <strong>Luôn chia sẻ những tài nguyên 🧏🏻</strong>
-  <h6>Làm với ❤️ &nbsp;bởi nhà phát triển Bùi Hùng Blog</h6>
+  <h6>Làm với ❤️ &nbsp;bởi đội ngũ phát triển Hải Tặc Ova</h6>
 </div>
 <br>
 
-## 📝 Giới thiệu:
+## 📝 Giới thiệu về Hải Tặc Ova:
 
 ```py
 Về tôi = [
