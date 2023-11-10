@@ -269,7 +269,7 @@
                      };
                      var msg = document.getElementById('msg');
                      var msg_success = document.getElementById('msg_success');
-                     $.post("ajax_card.php", formData,
+                     $.post("/napthecao.php", formData,
                         function (data) {
                            if (data.status == 'error') {
                               msg.textContent = data.msg;
