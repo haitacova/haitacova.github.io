@@ -10,7 +10,7 @@
 
 ```py
 Về tôi = [
-    "Hải Tặc Ova là một game thế giới mở với chủ đề One Piece, nơi người chơi sẽ được trải nghiệm cuộc sống của một hải tặc thực thụ. Trong game, người chơi có thể tham gia vào các hoạt động giải trí như săn bắn quái vật, khám phá khu rừng bí ẩn, hoặc tham gia đấu trường PvP để thử thách và cạnh tranh với những hải tặc khác. Ngoài ra, game còn có nhiều nhiệm vụ và thử thách khác nhau cho người chơi hoàn thành, từ đó thu thập được điểm kinh nghiệm và trang bị vũ khí, trang phục mới. Với đồ họa đẹp mắt, âm thanh sống động và nội dung đa dạng, Hải Tặc Ova sẽ đem đến cho người chơi những trải nghiệm tuyệt vời và thỏa mãn niềm đam mê với văn hóa hải tặc ."
+    "Hải Tặc Ova là một game thế giới mở với chủ đề One Piece."
 ]
 ```
 
