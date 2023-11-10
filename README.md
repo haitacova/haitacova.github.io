@@ -1,7 +1,5 @@
-# Hải Tặc Tí Hon Ova
-# HTTH OVA
 <div align="center">
-  <img src="assets/logo.png" alt="Bùi Hùng Blog width="320">
+  <img src="assets/logo.png" alt="Hải Tặc Ova"width="320">
   <h1>Chào mừng bạn đến với GitHub của tôi</h1>
   <strong>Luôn chia sẻ những tài nguyên 🧏🏻</strong>
   <h6>Làm với ❤️ &nbsp;bởi nhà phát triển Bùi Hùng Blog</h6>
