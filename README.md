@@ -1,7 +1,6 @@
 <div align="center">
   <img src="assets/logo.png" alt="Hải Tặc Ova"width="320">
-  <h1>Chào mừng bạn đến với GitHub của tôi</h1>
-  <strong>Luôn chia sẻ những tài nguyên 🧏🏻</strong>
+  <h1>Chào mừng bạn đến với GitHub của Hải Tặc Ova</h1>
   <h6>Làm với ❤️ &nbsp;bởi đội ngũ phát triển Hải Tặc Ova</h6>
 </div>
 <br>
