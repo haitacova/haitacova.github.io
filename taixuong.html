@@ -46,11 +46,20 @@
       crossorigin="anonymous"></script>
    <meta name="google-adsense-account" content="ca-pub-1643127618182542">
    <link href="/ads.txt" rel="stylesheet">
+       <style type="text/css">
+      body {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+      }
+    </style>
 </head>
 
 <body>
-
-   <body>
+   <body onkeydown="return false"></body>
       <div id="HaiTacOva">
          <div class="container">
             <div class="main">
@@ -163,6 +172,48 @@
             </div>
          </div>
       </div>
+      <script type="text/javascript">
+         var message = "NoRightClicking";
+         function defeatIE() {
+           if (document.all) {
+             message;
+             return false;
+           }
+         }
+         function defeatNS(e) {
+           if (document.layers || (document.getElementById && !document.all)) {
+             if (e.which == 2 || e.which == 3) {
+               message;
+               return false;
+             }
+           }
+         }
+         if (document.layers) {
+           document.captureEvents(Event.MOUSEDOWN);
+           document.onmousedown = defeatNS;
+         } else {
+           document.onmouseup = defeatNS;
+           document.oncontextmenu = defeatIE;
+         }
+         document.oncontextmenu = new Function("return false");
+       </script>
+       <script type="text/javascript">
+         checkCtrl = false $('*').keydown(function(e) {
+             if (e.keyCode == '17') {
+                 checkCtrl = false
+             }
+         }).keyup(function(ev) {
+             if (ev.keyCode == '17') {
+                 checkCtrl = false
+             }
+         }).keydown(function(event) {
+             if (checkCtrl) {
+                 if (event.keyCode == '85') {
+                     return false;
+                 }
+             }
+         })
+       </script>
    </body>
 
 </html>
