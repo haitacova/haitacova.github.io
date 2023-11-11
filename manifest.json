@@ -4,7 +4,7 @@
   "name": "HaiTacOva - Kho Bau Huyen Thoai",
   "icons": [
     {
-      "src": "assets/logo.png",
+      "src": "/assets/logo.png",
       "type": "image/png",
       "sizes": "192x192"
     }
