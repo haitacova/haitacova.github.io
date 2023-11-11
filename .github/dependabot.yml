@@ -1,11 +1,11 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
+# Để bắt đầu cập nhật phiên bản Dependabot, bạn cần chỉ định phiên bản nào
+# hệ sinh thái gói cần cập nhật và nơi chứa các bản kê khai gói.
+# Vui lòng xem tài liệu về tất cả các tùy chọn cấu hình:
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
 updates:
-  - package-ecosystem: "" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "" # Xem tài liệu để biết các giá trị có thể
+    directory: "/" # Vị trí của bản kê khai gói
     schedule:
       interval: "weekly"
