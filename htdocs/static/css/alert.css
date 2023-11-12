@@ -1,0 +1,13 @@
+.box-alert {background-color: rgb(255 255 255 / 25%);width: 100%;height: 100vh;position: fixed;z-index: 9999;
+    top: 0;left: 0;padding: 10px;display: flex;justify-content: center;align-items: center;}
+.alert-content {margin: 200px auto;position: relative;flex-direction: column;justify-content: center;width: 32em;
+    max-width: 100%;padding: 1.25em;border-radius: .3125em;background: #fff;font-family: inherit;font-size: 1rem;box-sizing: border-box;display: flex;}
+.alert-header {display: flex;flex-direction: column;align-items: center;}
+.alert-title {position: relative;max-width: 100%;margin: 0 0 .4em;padding: 0;color: #595959;
+    font-size: 1.875em;font-weight: 600;text-align: center;text-transform: none;word-wrap: break-word;}
+.alert-text {margin: 0;padding: 0;color: #545454;font-size: 1.125em;font-weight: 300;
+    line-height: normal;z-index: 1;word-wrap: break-word;text-align: center;}
+.alert-action {flex-wrap: wrap;align-items: center;justify-content: center;margin: 1.25em auto 0;z-index: 1;}
+.alert-action button {border: 0;border-radius: .25em;background: initial;background-color: #3085d6;
+    color: #fff;font-size: 1.0625em;margin: .3125em;padding: .625em 2em;font-weight: 500;}
+.hide {display: none;}

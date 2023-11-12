@@ -1,0 +1,31 @@
+ RewriteEngine On
+RewriteBase /home.html
+RewriteCond %{REQUEST_FILENAME} !-f [OR] !-d
+RewriteCond %{REQUEST_FILENAME} !-s
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?tenmiencuaban.com/.*$ [NC]
+RewriteRule ^api/active$ /api/auth/active.php [L]
+RewriteRule ^api/change-mail$ /api/auth/change-mail.php [L]
+RewriteRule ^api/change-password$ /api/auth/change-password.php [L]
+RewriteRule ^api/login$ /api/auth/login.php [L]
+RewriteRule ^api/register$ /api/auth/register.php [L]
+
+# card
+RewriteRule ^api/getListTelco$ /api/charging/get_list_telco.php [L]
+RewriteRule ^api/getlistcard$ /api/charging/getListCard.php [L]
+RewriteRule ^api/rechargePhone$ /api/charging/rechargePhone.php [L]
+
+#doi luong
+RewriteRule ^api/exchange$ /api/charging/exchange.php [L]
+RewriteRule ^ranking$ /src/screens/ranking.php [L]
+
+#lich su
+RewriteRule ^api/getListTransaction$ /api/charging/get_list_transaction.php [L]
+
+# ban tin
+RewriteRule ^post/0$ /src/screens/post.php [L]
+
+# doi mat khau
+RewriteRule ^api/change-password$ /api/auth/change-password.php [L]
+RewriteRule ^api/change-phone$ /api/auth/change-password.php [L]
+

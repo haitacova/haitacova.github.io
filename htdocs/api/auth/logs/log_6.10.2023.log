@@ -1,0 +1,9 @@
+Host: ::1 - October 6, 2023, 7:22 pm
+Content REGISTER: {"username":"zancony","password":"az092002","phone":"+84987654321","email":"fhsjex@gmail.com"}
+-------------------------
+Host: ::1 - October 6, 2023, 7:24 pm
+Content REGISTER: {"username":"admin","password":"az092002","phone":"+84987654321","email":"rycn4@gmail.com"}
+-------------------------
+Host: ::1 - October 6, 2023, 7:24 pm
+Content LOGIN: {"username":"admin","password":"az092002"}
+-------------------------
